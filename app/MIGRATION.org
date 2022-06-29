@@ -1,0 +1,24 @@
+* ios
+** GoogleMaps
+   $ ios/Runner/AppDelegate.swift
+
+   #+BEGIN_SRC swift
+      GMSServices.provideAPIKey("AIzaSyCYbPVAi4_-Ikq9zGt_Uh3bfwLuBa3zaNw")
+   #+END_SRC
+
+** AppIcon.appiconset
+   $ ios/Runner/Assets.xcassets/AppIcon.appiconset
+
+** Info.plist
+   $ ios/Runner/Info.plist
+
+** permission_handler
+   $ ios/Podfile
+
+* android  
+** permission_handler
+   $ android/app/src/main/AndroidManifest.xml
+
+   #+BEGIN_SRC xml
+    <uses-permission android:name="android.permission.*" />
+   #+END_SRC

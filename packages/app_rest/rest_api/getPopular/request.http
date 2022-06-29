@@ -1,0 +1,7 @@
+
+#
+# Response:  ArrayResponse<Movie>
+# Model:     Movie
+# ApiClient: getPopular()
+#
+GET https://api.themoviedb.org/3/movie/top_rated?api_key=d7ff494718186ed94ee75cf73c1a3214&language=en-US&page=1

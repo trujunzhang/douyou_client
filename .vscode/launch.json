@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "app[dev] - Mobile",
+      "request": "launch",
+      "type": "dart",
+      "cwd": "${workspaceFolder}/app",
+      "program": "lib/main_dev.dart"
+    },
+    {
+      "name": "doc_widget - Web",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/doc_widget_app",
+      "args": [
+        "-d",
+        "chrome",
+        "--web-port",
+        "5000"
+      ]
+    },
+    {
+      "name": "main app",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart"
+    }
+  ]
+}

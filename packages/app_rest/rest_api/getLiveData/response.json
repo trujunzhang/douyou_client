@@ -1,0 +1,25 @@
+{
+    "code": 0,
+    "data": {
+        "list": [
+            {
+                "rid": 4933024,
+                "vipId": 0,
+                "roomName": "\u5b89\u5fbd\u4e3b\u64ad\uff0c\u53cc\u500d\u4eb2\u5bc6\u5ea6",
+                "cate1Id": 0,
+                "cate2Id": 311,
+                "roomSrc": "https://rpic.douyucdn.cn/live-cover/roomCover/2022/04/01/167261fdb99aa19396a79e6067e1d3c1_big.png/dy1",
+                "verticalSrc": "https://rpic.douyucdn.cn/live-cover/roomCover/2022/04/01/167261fdb99aa19396a79e6067e1d3c1_small.png/dy2",
+                "avatar": "https://apic.douyucdn.cn/upload/avatar_v3/202104/3de20e78f7774c9ebd5a4ae33c8b4045_middle.jpg",
+                "nickname": "\u5927\u6676\u8981\u53d8\u7626",
+                "isVertical": 0,
+                "liveCity": "",
+                "isLive": 1,
+                "hn": "80.6\u4e07"
+            }
+        ],
+        "pageCount": 72,
+        "nowPage": 1,
+        "cate2Id": 201
+    }
+}

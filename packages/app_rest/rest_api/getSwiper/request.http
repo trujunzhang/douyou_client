@@ -1,0 +1,9 @@
+
+#
+# Response:  BaseResult
+# Model:     BaseResult
+# ApiClient: getSwiper()
+# 
+#
+GET http://23.105.205.158:1236/dy/flutter/swiper
+

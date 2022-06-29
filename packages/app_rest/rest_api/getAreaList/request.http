@@ -1,0 +1,9 @@
+
+#
+# Response:  GenresResponse<Genre>
+# Model:     Genre
+# ApiClient: getGenres()
+# 
+#
+GET https://api.themoviedb.org/3/genre/movie/list?api_key=d7ff494718186ed94ee75cf73c1a3214&language=en-US
+

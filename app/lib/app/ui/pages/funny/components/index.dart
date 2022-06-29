@@ -1,0 +1,1 @@
+export 'lottery/view.dart';

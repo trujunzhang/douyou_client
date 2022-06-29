@@ -1,0 +1,179 @@
+name: dy_getx
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.1.1+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Local plugins  
+  app_config:
+      path: ../packages/app_config
+  app_language:
+      path: ../packages/app_language
+  app_theme:
+      path: ../packages/app_theme
+  app_rest:
+      path: ../packages/app_rest
+  app_models:
+      path: ../packages/app_models
+  app_widgets:
+      path: ../packages/app_widgets
+  my_plugin:
+      git: https://trujunzhang@bitbucket.org/trujunzhang/my_plugin.git
+
+  #UI
+  cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.1.0
+
+  # design systems
+  mix: ^0.0.5
+
+  # Logic
+  get: ^4.1.4
+  get_storage: ^2.0.3
+  equatable: ^2.0.0
+  crypto: ^3.0.1
+
+  # Exceptions
+  # https://sentry.io/
+  sentry_flutter: ^6.0.0
+
+  # camera
+  cached_network_image: ^3.1.0
+
+  # Toast
+  oktoast: ^3.1.1
+
+  # common
+  package_info: ^2.0.2
+
+  # permission
+  permission_handler: ^10.0.0
+
+  flutter_screenutil: ^5.4.0
+  pull_to_refresh: ^2.0.0
+  flutter_swiper_null_safety: ^1.0.2
+  flutter_local_notifications: ^9.4.0
+  photo_view: ^0.14.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.1.1
+  test: ^1.16.8
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.1
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/pic-default.jpg
+    - assets/images/back.webp
+    - assets/images/default-avatar.webp
+    - assets/images/shayuniang.png
+    - assets/images/search.webp
+    - assets/images/cfk.webp
+    - assets/images/hot.png
+    - assets/images/member.png
+    - assets/images/play.png
+    - assets/images/gift.png
+    - assets/images/gift-banner.png
+    - assets/images/gift-x.png
+    - assets/images/gift-1.png
+    - assets/images/float-icon.webp
+    - assets/images/init_logo.webp
+    - assets/images/init_icon.png
+    - assets/images/show-area.webp
+    - assets/images/broadcast.webp
+    - assets/images/fun_home_pull_down.png
+    - assets/images/cjf.webp
+    - assets/images/dg.webp
+    - assets/images/dg0.webp
+    - assets/images/cqe.webp
+    - assets/images/num/0.webp
+    - assets/images/num/1.webp
+    - assets/images/num/2.webp
+    - assets/images/num/3.webp
+    - assets/images/num/4.webp
+    - assets/images/num/5.webp
+    - assets/images/num/6.webp
+    - assets/images/num/7.webp
+    - assets/images/num/8.webp
+    - assets/images/num/9.webp
+    - assets/images/cate/tab-0.webp
+    - assets/images/cate/tab-1.webp
+    - assets/images/cate/tab-2.webp
+    - assets/images/cate/tab-3.webp
+    - assets/images/cate/tab-4.webp
+    - assets/images/cate/tab-5.webp
+    - assets/images/cate/tab-6.webp
+    - assets/images/cate/tab-7.webp
+    - assets/images/cate/tab-8.webp
+    - assets/images/cate/tab-9.webp
+    - assets/images/cate/tab-10.webp
+
+    - assets/images/login/syn.webp
+    - assets/images/login/qq.webp
+    - assets/images/login/wx.webp
+    - assets/images/login/weibo.webp
+    - assets/images/login/close.webp
+    - assets/images/login/safe.webp
+    - assets/images/login/member.webp
+    - assets/images/login/lock.webp
+
+    - assets/images/head/dylogo.png
+    - assets/images/head/camera.webp
+    - assets/images/head/chat.webp
+    - assets/images/head/game.webp
+    - assets/images/head/history.webp
+
+    - assets/images/lv/3.png
+    - assets/images/lv/30.png
+    - assets/images/lv/50.png
+    - assets/images/lv/80.png
+
+    - assets/images/nav/nav-11.jpg
+    - assets/images/nav/nav-21.jpg
+    - assets/images/nav/nav-31.jpg
+    - assets/images/nav/nav-41.jpg
+    - assets/images/nav/nav-51.jpg
+    - assets/images/nav/nav-12.jpg
+    - assets/images/nav/nav-22.jpg
+    - assets/images/nav/nav-32.jpg
+    - assets/images/nav/nav-42.jpg
+    - assets/images/nav/nav-52.jpg
+
+    - assets/images/bar/hot-chat.jpg
+    - assets/images/bar/day-title.png
+    - assets/images/bar/hot-title.png
+    - assets/images/bar/pull-icon.webp
+    - assets/images/bar/usefulSelect.webp
+    - assets/images/bar/girl.webp
+    - assets/images/bar/boy.webp
+    - assets/images/bar/tab-0.png
+    - assets/images/bar/tab-1.png
+    - assets/images/bar/tab-2.png
+    - assets/images/bar/chat-add.jpg
+    - assets/images/bar/chat-share.jpg
+    - assets/images/bar/chat-star.jpg
+    - assets/images/bar/chat-star-act.webp
