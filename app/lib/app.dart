@@ -55,8 +55,8 @@ class _MyAppState extends State<MyApp> {
         // FirebaseAnalyticsObserver(analytics: FirebaseAnalytics())
       ],
       // initialRoute: Routes.INITIAL,
-      initialRoute: Routes.HOME,
-      // initialRoute: Routes.COMMEND,
+      // initialRoute: Routes.HOME,
+      initialRoute: Routes.COMMEND,
       // initialRoute: Routes.FUNNY,
       // initialRoute: Routes.FISHBAR,
       // initialRoute: Routes.FOCUS,

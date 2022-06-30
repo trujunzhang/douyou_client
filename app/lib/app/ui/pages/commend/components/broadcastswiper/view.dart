@@ -47,10 +47,10 @@ class _BroadCastSwiperState extends State<BroadCastSwiper> with DYBase {
   }
 
   Widget _waitBroadcastSwiperData() {
-    List<BroadCast> _broadcastList = controller.state.broadCastList.value;
-    if (_broadcastList.isEmpty) {
+    List<BroadCast> broadcastList = controller.state.broadCastList.value;
+    if (broadcastList.isEmpty) {
       return const SizedBox();
-    } else if (_broadcastList.isNotEmpty) {
+    } else if (broadcastList.isNotEmpty) {
       return Swiper(
         itemBuilder: (BuildContext context, int index) => Container(
           child: Row(
@@ -67,7 +67,7 @@ class _BroadCastSwiperState extends State<BroadCastSwiper> with DYBase {
               Expanded(
                 flex: 1,
                 child: Text(
-                  _broadcastList[index].title!,
+                  broadcastList[index].title!,
                   style: TextStyle(
                     color: const Color(0xff333333),
                     fontSize: dp(12.5),
@@ -87,10 +87,10 @@ class _BroadCastSwiperState extends State<BroadCastSwiper> with DYBase {
                   ),
                   children: [
                     TextSpan(
-                      text: controller.formatTime(_broadcastList[index].time!),
+                      text: controller.formatTime(broadcastList[index].time!),
                     ),
                     TextSpan(
-                      text: DYservice.formatNum(_broadcastList[index].num!),
+                      text: DYservice.formatNum(broadcastList[index].num!),
                       style: const TextStyle(color: DYBase.defaultColor),
                     ),
                     const TextSpan(
@@ -103,7 +103,7 @@ class _BroadCastSwiperState extends State<BroadCastSwiper> with DYBase {
                 padding: EdgeInsets.only(right: dp(5)),
               ),
               GestureDetector(
-                onTap: () => controller.changeOrderStatus(_broadcastList[index]),
+                onTap: () => controller.changeOrderStatus(broadcastList[index]),
                 child: Container(
                   padding: EdgeInsets.only(
                     left: dp(8),
@@ -111,20 +111,11 @@ class _BroadCastSwiperState extends State<BroadCastSwiper> with DYBase {
                     top: dp(3),
                     bottom: dp(3),
                   ),
-                  child: Text(
-                    _broadcastList[index].order! ? '已预订' : '预订',
-                    style: TextStyle(
-                      color: _broadcastList[index].order!
-                          ? Colors.white
-                          : DYBase.defaultColor,
-                      fontSize: 11,
-                    ),
-                  ),
                   decoration: BoxDecoration(
-                    color: _broadcastList[index].order!
+                    color: broadcastList[index].order!
                         ? const Color(0xffd9d9d9)
                         : Colors.transparent,
-                    border: _broadcastList[index].order!
+                    border: broadcastList[index].order!
                         ? null
                         : Border.all(
                             color: const Color(0xffffd2a6), width: dp(.7)),
@@ -132,12 +123,21 @@ class _BroadCastSwiperState extends State<BroadCastSwiper> with DYBase {
                       Radius.circular(dp(4)),
                     ),
                   ),
+                  child: Text(
+                    broadcastList[index].order! ? '已预订' : '预订',
+                    style: TextStyle(
+                      color: broadcastList[index].order!
+                          ? Colors.white
+                          : DYBase.defaultColor,
+                      fontSize: 11,
+                    ),
+                  ),
                 ),
               ),
             ],
           ),
         ),
-        itemCount: _broadcastList.length,
+        itemCount: broadcastList.length,
         scrollDirection: Axis.vertical,
         autoplay: true,
         duration: 1500,

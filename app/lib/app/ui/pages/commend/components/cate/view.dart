@@ -101,16 +101,19 @@ class _CateListState extends State<CateList> with DYBase {
                 width: indicatorBoxWidth,
                 height: indicatorHeight,
                 color: const Color(0xffd0d0d0),
-                child: Stack(alignment: Alignment.centerLeft, children: [
-                  Positioned(
-                    left: scrollValue,
-                    child: Container(
-                      width: indicatorWidth,
-                      height: indicatorHeight,
-                      color: const Color(0xffff5d24),
-                    ),
-                  )
-                ]),
+                child: Stack(
+                  alignment: Alignment.centerLeft,
+                  children: [
+                    Positioned(
+                      left: scrollValue,
+                      child: Container(
+                        width: indicatorWidth,
+                        height: indicatorHeight,
+                        color: const Color(0xffff5d24),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
