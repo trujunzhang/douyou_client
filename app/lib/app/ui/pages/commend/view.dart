@@ -140,8 +140,8 @@ class CommendPage extends GetWidget<CommendController> with DYBase {
                             children: const [
                               // SwiperList(),
                               // CateList(),
-                              BroadCastSwiper(),
-                              // LiveList(),
+                              // BroadCastSwiper(),
+                              LiveList(),
                             ],
                           )
                         : null,

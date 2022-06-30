@@ -29,7 +29,7 @@ class BroadCastSwiperController extends GetxController {
     //   item['order'] = !current;
     // });
     // if (current) {
-    //   // Fluttertoast.showToast(msg: '已取消订阅');
+      // Fluttertoast.showToast(msg: '已取消订阅');
     // } else {
     //   // Fluttertoast.showToast(msg: '已订阅');
     // }

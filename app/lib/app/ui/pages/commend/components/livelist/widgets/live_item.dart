@@ -4,7 +4,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class LiveItem extends StatelessWidget with DYBase {
-  const LiveItem({Key? key, required this.item,required this.showKingTag}) : super(key: key);
+  const LiveItem({Key? key, required this.item, required this.showKingTag})
+      : super(key: key);
   final LiveDatum item;
   final bool showKingTag;
 
@@ -102,6 +103,8 @@ class LiveItem extends StatelessWidget with DYBase {
                     child: Stack(
                       children: <Widget>[
                         Positioned(
+                          top: 0,
+                          right: 0,
                           child: Container(
                             width: dp(120),
                             height: dp(18),
@@ -131,10 +134,10 @@ class LiveItem extends StatelessWidget with DYBase {
                               ],
                             ),
                           ),
-                          top: 0,
-                          right: 0,
                         ),
                         Positioned(
+                          bottom: 0,
+                          left: 0,
                           child: Container(
                             width: boxWidth,
                             height: dp(25),
@@ -166,8 +169,6 @@ class LiveItem extends StatelessWidget with DYBase {
                               ],
                             ),
                           ),
-                          bottom: 0,
-                          left: 0,
                         ),
                       ],
                     ),
