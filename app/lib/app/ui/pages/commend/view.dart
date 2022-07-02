@@ -138,9 +138,9 @@ class CommendPage extends GetWidget<CommendController> with DYBase {
                     child: index == 0
                         ? Column(
                             children: const [
-                              // SwiperList(),
-                              // CateList(),
-                              // BroadCastSwiper(),
+                              SwiperList(),
+                              CateList(),
+                              BroadCastSwiper(),
                               LiveList(),
                             ],
                           )

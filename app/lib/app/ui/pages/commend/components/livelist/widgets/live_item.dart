@@ -179,57 +179,66 @@ class LiveItem extends StatelessWidget with DYBase {
                     fit: BoxFit.fill,
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: dp(27),
-                        child: Row(children: [
-                          Container(
-                            padding: EdgeInsets.only(left: dp(6), right: dp(6)),
-                            width: boxWidth,
-                            child: Text(
-                              item.roomName!,
-                              textAlign: TextAlign.start,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontSize: dp(13),
-                              ),
-                            ),
-                          )
-                        ]),
-                      ),
-                      Stack(
-                          alignment: AlignmentDirectional.centerStart,
-                          children: [
-                            Container(
-                              margin: EdgeInsets.only(right: dp(6.0 + 20)),
-                              padding: EdgeInsets.only(left: dp(6)),
-                              height: dp(18),
-                              child: Row(
-                                children: _renderTag(showKingTag),
-                              ),
-                            ),
-                            Positioned(
-                              right: dp(6),
-                              child: Image.asset(
-                                'assets/images/dg0.webp',
-                                height: dp(3),
-                              ),
-                            )
-                          ]),
-                      Padding(
-                          padding: EdgeInsets.only(
-                        bottom: dp(7.5),
-                      ))
-                    ],
-                  ),
-                ),
+                _buildBottom(),
               ],
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildBottom() {
+    var boxWidth = dp(164);
+    return Container(
+      color: Colors.white,
+      child: Column(
+        children: [
+          SizedBox(
+            height: dp(27),
+            child: Row(
+              children: [
+                Container(
+                  padding: EdgeInsets.only(left: dp(6), right: dp(6)),
+                  width: boxWidth,
+                  child: Text(
+                    item.roomName!,
+                    textAlign: TextAlign.start,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: dp(13),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+          Stack(
+            alignment: AlignmentDirectional.centerStart,
+            children: [
+              Container(
+                margin: EdgeInsets.only(right: dp(6.0 + 20)),
+                padding: EdgeInsets.only(left: dp(6)),
+                height: dp(18),
+                child: Row(
+                  children: _renderTag(showKingTag),
+                ),
+              ),
+              Positioned(
+                right: dp(6),
+                child: Image.asset(
+                  'assets/images/dg0.webp',
+                  height: dp(3),
+                ),
+              )
+            ],
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              bottom: dp(7.5),
+            ),
+          )
+        ],
       ),
     );
   }
